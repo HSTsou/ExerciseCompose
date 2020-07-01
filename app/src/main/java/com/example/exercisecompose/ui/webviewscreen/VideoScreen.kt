@@ -97,5 +97,8 @@ private class WebViewInterface {
     @JavascriptInterface
     fun postMessage(msg: String) {
         Log.d("TAG", msg)
+        if(msg.contains("onPlayerReady")){
+//            playing
+        }
     }
 }
